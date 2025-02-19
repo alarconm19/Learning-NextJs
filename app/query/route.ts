@@ -1,6 +1,7 @@
-// import postgres from 'postgres';
+import postgres from 'postgres';
+require ('dotenv').config();
 
-// const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
+const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
 
 // async function listInvoices() {
 // 	const data = await sql`
